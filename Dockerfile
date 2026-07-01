@@ -14,7 +14,7 @@ RUN mkdir -p /var/run/prosody /var/lib/prosody /var/log/prosody \
        /var/log/prosody /etc/prosody
 
 RUN cat > /etc/prosody/prosody.cfg.lua << 'EOF'
-admins = { "admin@prosody-server-production.up.railway.app" }
+admins = { "admin@onyx1.up.railway.app" }
 
 modules_enabled = {
     "roster",
@@ -43,7 +43,7 @@ http_ports = { 5280 }
 http_interfaces = { "0.0.0.0" }
 https_ports = {}
 
-VirtualHost "prosody-server-production.up.railway.app"
+VirtualHost "onyx1.up.railway.app"
     http_paths = {
         websocket = "/xmpp-websocket";
     }
